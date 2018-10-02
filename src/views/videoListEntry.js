@@ -5,9 +5,14 @@ var VideoListEntryView = Backbone.View.extend({
   events : {
     'click .video-list-entry-title': 'handleClick'
   },
+  // selectVideo: function(selection){
+  //   console.log('SELECTION',selection)
+  //   this.model = selection;
+  // },
   handleClick: function(){
-    console.log(this)
-    this.$el.select();
+    // $('.video-player').append(new VideoPlayerView({model:this}).render().$el)
+    // console.log(this.model.id.videoId)
+    //this.model.selectVideo();
   },
 
   render: function() {
