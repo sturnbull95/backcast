@@ -4,7 +4,7 @@ var AppView = Backbone.View.extend({
 
   initialize: function() {
     this.videos = new Videos(exampleVideoData);
-    console.log('VIDEOS',this.videos)
+    this.videos.search('Hawaii');
     this.render();
   },
 
@@ -20,9 +20,15 @@ var AppView = Backbone.View.extend({
       collection: this.videos,
       el: $('.list')
     }).render();
+    new SearchView({
+      collection:this.videos,
+      el: $('.search')
+    }).render();
     return this;
   },
 
   template: templateURL('src/templates/app.html')
 
 });
+
+//open /Applications/Google\ Chrome.app --args --allow-file-access-from-files
