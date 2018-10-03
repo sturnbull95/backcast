@@ -30,6 +30,13 @@ body {
   width: 20%;
   margin-left: -1px;
 }
+.autoPlay {
+  display: block;
+  margin-top: 5px;
+  margin-left: 300px;
+  border-radius: 8px;
+  background-color: red;
+}
 
 .search-bar .btn:hover {
   border-color: #c6c6c6;
